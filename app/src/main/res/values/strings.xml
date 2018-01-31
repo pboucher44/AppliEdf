@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppliEdf</string>
+    <string name="cpt">RELEVE DE COMPTEUR :</string>
+    <string name="bouton">ENVOYER</string>
+    <string name="saisieHP">Saisir ici le compteur HP :</string>
+    <string name="saisieHC">Saisir ici le compteur HC :</string>
+    <string name="saisieCodeCli">Saisir ici le code du client :</string>
+    <string name="saisieDateReleve">Saisir ici la date du relevé :</string>
+    <string name="bouton3">réparation</string>
+    <string name="bouton2">changement</string>
+    <string name="bouton1">normal</string>
+    <string name="menu_releve">Nouveau relevé compteur</string>
+    <string name="menu_quitter">quitter</string>
+    <string name="sousmenu_nouvclient">nouveau client</string>
+    <string name="sousmenu_client">client existant</string>
+    <string name="btnQuitterCli">retour relevé compteur</string>
+    <string name="btnChoixCli">Valider Choix Client</string>
+    <string name="textViewListeCli">Liste des clients existants</string>
+    <string name="client_existant">Client existant</string>
+    <string name="ajout_client">Ajout client</string>
+</resources>

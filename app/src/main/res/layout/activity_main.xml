@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cpt"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/textViewHP"
+        android:layout_below="@+id/textViewHP"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editTextHP"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="41dp"
+                android:ems="10"
+                android:gravity="bottom"
+                android:hint="@string/saisieHP"
+                android:inputType="textPersonName">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextHC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editTextHP"
+                android:layout_below="@+id/editTextHP"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="25dp"
+                android:layout_weight="0.02"
+                android:ems="10"
+                android:gravity="bottom"
+                android:hint="@string/saisieHC"
+                android:inputType="textPersonName">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextCodeCli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editTextHC"
+                android:layout_below="@+id/editTextHC"
+                android:layout_marginTop="24dp"
+                android:layout_weight="0.02"
+                android:ems="10"
+                android:gravity="bottom"
+                android:inputType="number"
+                android:text="saisir ici code client " />
+
+            <EditText
+                android:id="@+id/editTextDateReleve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editTextCodeCli"
+                android:layout_below="@+id/editTextCodeCli"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.02"
+                android:ems="10"
+                android:gravity="bottom"
+                android:hint="@string/saisieDateReleve"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/buttonEnvoyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bouton"
+                android:textAlignment="center"
+                android:layout_above="@+id/RadioGroup1"
+                android:layout_centerHorizontal="true" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="53dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <RadioButton
+                    android:id="@+id/RadioButtonNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:paddingRight="5dp"
+                    android:text="@string/bouton1" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonChangement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:paddingRight="5dp"
+                    android:text="@string/bouton2" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonReparation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="@string/bouton3" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
